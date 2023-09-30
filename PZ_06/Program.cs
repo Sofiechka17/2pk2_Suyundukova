@@ -1,66 +1,52 @@
-﻿namespace PZ_07
+﻿namespace PZ_06vostanovlen
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите количество строк матрицы: ");
-            int rows = int.Parse(Console.ReadLine());
 
-            Console.Write("Введите количество столбцов матрицы: ");
-            int columns = int.Parse(Console.ReadLine());
+                int[] array1 = new int[10];
+                int[] array2;
+                Random random = new Random();
 
-            int[,] matrix = new int[rows, columns];
-
-            Console.WriteLine("Введите элементы матрицы:");
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
+                // Заполнение первого массива случайными числами
+                for (int i = 0; i < array1.Length; i++)
                 {
-                    Console.Write("Элемент [{0},{1}]: ", i, j);
-                    matrix[i, j] = int.Parse(Console.ReadLine());
+                    array1[i] = random.Next(0, 101);
                 }
-            }
 
-            Console.WriteLine("Исходная матрица:");
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
+                // Подсчет количества четных элементов в первом массиве
+                int count = 0;
+                for (int i = 0; i < array1.Length; i++)
                 {
-                    Console.Write(matrix[i, j] + "\t");
-                }
-                Console.WriteLine();
-            }
-
-            // Сортировка столбцов по убыванию значений элементов в первой строке
-            for (int j = 0; j < columns; j++)
-            {
-                for (int i = 0; i < rows - 1; i++)
-                {
-                    for (int k = i + 1; k < rows; k++)
+                    if (array1[i] % 2 == 0)
                     {
-                        if (matrix[i, j] < matrix[k, j])
-                        {
-                            int temp = matrix[i, j];
-                            matrix[i, j] = matrix[k, j];
-                            matrix[k, j] = temp;
-                        }
+                        count++;
                     }
                 }
-            }
 
-            Console.WriteLine("Матрица после сортировки столбцов:");
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
+                // Создание второго массива и заполнение его индексами четных элементов первого массива
+                array2 = new int[count];
+                int index = 0;
+                for (int i = 0; i < array1.Length; i++)
                 {
-                    Console.Write(matrix[i, j] + "\t");
+                    if (array1[i] % 2 == 0)
+                    {
+                        array2[index] = i;
+                        index++;
+                    }
                 }
-                Console.WriteLine();
-            }
+
+                // Вывод значений второго массива на экран
+                Console.WriteLine("Индексы четных элементов первого массива:");
+                for (int i = 0; i < array2.Length; i++)
+                {
+                    Console.WriteLine(array2[i]);
+                }
+
+                Console.ReadLine();
+            
         }
     }
 }
+    
