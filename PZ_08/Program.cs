@@ -21,7 +21,7 @@ namespace PZ_08
                 stepArray[i] = new string[lengths[i]];
                 for (int j = 0; j < stepArray[i].Length; j++)
                 {
-                    stepArray[i][j] = "Value " + (i + 1) + "-" + (j + 1); // Пример заполнения значениями
+                    stepArray[i][j] = random.Next(1,101).ToString(); // Пример заполнения значениями
                 }
             }
 
@@ -108,7 +108,6 @@ namespace PZ_08
                 }
                 Console.WriteLine();
             }
-
             // Реверс каждой строки ступенчатого массива
             for (int i = 0; i < stepArray.Length; i++)
             {
