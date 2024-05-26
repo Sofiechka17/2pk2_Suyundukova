@@ -1,0 +1,65 @@
+﻿<Window x:Class="Суюндукова_София.Reg_and_Auth.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Суюндукова_София.Reg_and_Auth"
+        mc:Ignorable="d"
+       Title="Авторизация" Height="400" Width="300" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="/photo/photo1.jpg"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1">
+            <!--Строение окна-->
+            <Image Source="/icons/car.png"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Height="50"/>
+            <TextBlock Margin="0 10 0 10" 
+                       TextWrapping="Wrap" 
+                       Text="Авторизация" FontFamily="Comfortaa" 
+                       VerticalAlignment="Center" 
+                       FontSize="25" HorizontalAlignment="Center"/>
+            <TextBlock Margin="0 5 0 5" 
+                       TextWrapping="Wrap" 
+                       Text="Bведите логин" 
+                       FontFamily="Comfortaa" VerticalAlignment="Center" 
+                       FontSize="15" HorizontalAlignment="Center"/>
+            <TextBox Name="Login"  VerticalAlignment="Center" 
+                     FontSize="15" HorizontalAlignment="Center" 
+                     MinWidth="200"/>
+            <TextBlock Margin="0 5 0 5" 
+                       TextWrapping="Wrap" Text="Bведите пароль" 
+                       FontFamily="Comfortaa" 
+                       VerticalAlignment="Center" 
+                       FontSize="15" 
+                       HorizontalAlignment="Center"/>
+            <PasswordBox Name="Password" 
+                         VerticalAlignment="Center" 
+                         FontSize="15" 
+                         HorizontalAlignment="Center" 
+                         MinWidth="200"/>
+            <Button Margin="0 15 0 0" 
+                    MaxWidth="200"
+                    MinHeight="30" 
+                    Background="#C3B505" 
+                    Click="Button_Auth">
+                <TextBlock Text="Bыполнить вход" FontSize="15"  FontFamily="Comfortaa" TextWrapping="Wrap"/>
+            </Button>
+            <Button Margin="0 15 0 0" 
+                    MaxWidth="200" 
+                    MinHeight="30" Background="#C3B505" 
+                    Click="Button_Regstration">
+                <TextBlock Text="Пройти регистрацию" FontSize="15"  FontFamily="Comfortaa" TextWrapping="Wrap"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

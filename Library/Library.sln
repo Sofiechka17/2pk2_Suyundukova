@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{F68C7F53-774E-49D4-ACDF-4425E5BC3C88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Суюндукова София", "Суюндукова София\Суюндукова София\Суюндукова София.csproj", "{1AA64ECB-DA15-4AB0-8396-7D771EE253BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F68C7F53-774E-49D4-ACDF-4425E5BC3C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68C7F53-774E-49D4-ACDF-4425E5BC3C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68C7F53-774E-49D4-ACDF-4425E5BC3C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68C7F53-774E-49D4-ACDF-4425E5BC3C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA64ECB-DA15-4AB0-8396-7D771EE253BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA64ECB-DA15-4AB0-8396-7D771EE253BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA64ECB-DA15-4AB0-8396-7D771EE253BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA64ECB-DA15-4AB0-8396-7D771EE253BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCBA5638-DE16-49DE-9C71-9F09678AE82B}
+	EndGlobalSection
+EndGlobal

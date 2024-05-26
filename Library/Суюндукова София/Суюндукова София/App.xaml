@@ -1,0 +1,9 @@
+﻿<Application x:Class="Суюндукова_София.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Суюндукова_София"
+             StartupUri="Reg_and_Auth/AuthWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Суюндукова_София</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\car.png" />
+    <None Remove="photo\car1.png" />
+    <None Remove="photo\car2.png" />
+    <None Remove="photo\car3.png" />
+    <None Remove="photo\car4.png" />
+    <None Remove="photo\photo1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Library">
+      <HintPath>..\..\Library\bin\Debug\net7.0-windows\Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons\car.png" />
+    <Resource Include="photo\car1.png" />
+    <Resource Include="photo\car2.png" />
+    <Resource Include="photo\car3.png" />
+    <Resource Include="photo\car4.png" />
+    <Resource Include="photo\photo1.jpg" />
+  </ItemGroup>
+
+</Project>

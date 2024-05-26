@@ -1,0 +1,91 @@
+﻿<Window x:Class="Суюндукова_София.Reg_and_Auth.RegWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Суюндукова_София.Reg_and_Auth"
+        mc:Ignorable="d"
+      Title="Регистрация" Height="450" Width="400" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="/photo/photo1.jpg"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/icons/car.png"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Height="50"/>
+
+
+        <TextBlock Margin="0 10 0 10" 
+                    TextWrapping="Wrap" 
+                    Text="Регистрация" FontFamily="Comfortaa" 
+                   VerticalAlignment="Center" 
+                   FontSize="25" HorizontalAlignment="Center"
+                   Grid.Row="1"/>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <!--Строение окна-->
+            <TextBlock Margin="0 5 0 5" 
+                       TextWrapping="Wrap" 
+                       Text="Bведите имя" 
+                       HorizontalAlignment="Center"
+                       FontFamily="Comfortaa" 
+                       FontSize="15" />
+            <TextBox Name="Name" 
+                     FontSize="15"
+                     MinWidth="200"/>
+            <TextBlock Margin="0 5 0 5" 
+                       TextWrapping="Wrap" Text="Bведите фамилию" 
+                       FontFamily="Comfortaa" 
+                       HorizontalAlignment="Center"
+                       FontSize="15" />
+            <TextBox Name="Surname" 
+                     FontSize="15"
+                     MinWidth="200"/>
+            <TextBlock Margin="0 5 0 5" 
+                       TextWrapping="Wrap" 
+                       HorizontalAlignment="Center"
+                       Text="Bведите логин" 
+                       FontFamily="Comfortaa" 
+                       FontSize="15" />
+            <TextBox Name="Login" 
+                     FontSize="15"
+                     MinWidth="200"/>
+            <TextBlock Margin="0 5 0 5" 
+                       TextWrapping="Wrap" 
+                       Text="Bведите пароль" 
+                       HorizontalAlignment="Center"
+                       FontFamily="Comfortaa" 
+                       FontSize="15" />
+            <PasswordBox Name="Password"  
+                         FontSize="15"  
+                         MinWidth="200"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Margin="0 15 0 0" 
+                MaxWidth="200"
+                MinHeight="30"
+                Background="#C3B505" 
+                Click="Registration">
+                <TextBlock Text="Зарегестрироваться" FontSize="15"  FontFamily="Comfortaa" TextWrapping="Wrap"/>
+            </Button>
+            <Button Margin="0 15 0 0" 
+                MaxWidth="200"
+                MinHeight="30" Background="#C3B505" 
+                Click="Button_Autorization">
+                <TextBlock Text="У меня есть аккаунт" FontSize="15"  FontFamily="Comfortaa" TextWrapping="Wrap"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
